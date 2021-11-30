@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>What is your Zodiac sign?</title>
+    <style>
+      body {
+        background: linear-gradient(180deg, #23023f 20%, #480f77 80%);
+        font-family: monospace;
+      }
+
+      h1,
+      p,
+      h2 {
+        text-align: center;
+        color: whitesmoke;
+      }
+
+      h1 {
+        font-size: 35px;
+        text-decoration-line: underline;
+        text-shadow: 1px 1px 3px black;
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+        width: 150px;
+      }
+
+      p {
+        font-size: 23px;
+        line-height: 1cm;
+      }
+
+      h2 {
+        font-size: 25px;
+        font-weight: 600;
+        line-height: 1cm;
+        margin-top: 25px;
+      }
+
+      ul {
+        list-style: none;
+        padding-left: 0px;
+        margin-bottom: 20px;
+      }
+      li {
+        display: inline-block;
+        text-align: center;
+        margin: 0 auto;
+      }
+      .questionButton {
+        display: block;
+        margin: 30px auto 50px;
+        font-size: 23px;
+        border-radius: 30px;
+        border: double;
+        font-weight: 700;
+        box-shadow: 1px 1px 10px 10px rgba(255, 255, 0, 0.8);
+        font-family: cursive;
+      }
+      .questionButton:hover {
+        cursor: pointer;
+        background-color: rgb(90, 6, 158);
+        transition: all 200ms ease-in-out;
+        color: yellow;
+      }
+
+      .topRowButtons,
+      .bottomRowButtons {
+        text-align: center;
+        margin: 0 auto;
+        padding: 0 0;
+      }
+
+      .Zodiac {
+        padding: 5px 25px;
+        margin: 10px 5px;
+        width: 170px;
+        height: 170px;
+        max-width: 170px;
+        background-color: whitesmoke;
+        border-radius: 10%;
+        box-shadow: 1px 1px 10px 10px rgba(255, 255, 0, 0.8);
+        font-family: cursive;
+      }
+      .Zodiac:hover {
+        cursor: pointer;
+      }
+
+      .zodiacName {
+        text-align: center;
+        margin: 10px auto;
+        font-weight: 700;
+        color: black;
+        font-size: 23px;
+        font-style: italic;
+        text-decoration-line: overline;
+      }
+
+      .Element {
+        text-align: center;
+        margin: 5px auto;
+        font-weight: 600;
+        font-style: italic;
+        font-size: 20px;
+        color: whitesmoke;
+      }
+
+      .Traits {
+        margin: 5px auto;
+        font-size: 15px;
+        color: whitesmoke;
+      }
+      .Earth:hover {
+        background-color: rgb(134, 209, 134);
+        transition: all 1s ease-in-out;
+      }
+      .Water:hover {
+        background-color: rgb(0, 255, 255);
+        transition: all 1s ease-in-out;
+      }
+      .Air:hover {
+        background-color: rgb(180, 184, 174);
+        transition: all 1s ease-in-out;
+      }
+      .Fire:hover {
+        background-color: rgb(252, 63, 63);
+        transition: all 1s ease-in-out;
+      }
+
+      .furtherInfo {
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        color: whitesmoke;
+        font-size: 20px;
+        font-weight: 500;
+        font-style: italic;
+        text-decoration-line: overline;
+        text-decoration-style: wavy;
+        padding-top: 20px;
+      }
+
+      .credits {
+        margin-top: 30px;
+        color: whitesmoke;
+        text-align: right;
+      }
+      .datePlace {
+        font-size: 9px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Zodiac signs</h1>
+    <img
+      src="    https://img.freepik.com/free-vector/astrology-zodiac-signs-circle_102902-2276.jpg?size=338&ext=jpg
+"
+      alt="zodiacPic"
+    />
+    <p>
+      Zodiac signs are astrological signs mainly used in the Western world.
+      <br />
+      Each of them is influenced by one of the four elements and is said to give
+      its bearer certain character traits.
+      <br />
+      There are 12 signs in total. A person's sign is decided by the month and
+      day they were born on.
+    </p>
+    <hr />
+    <h2>
+      Would you like to know what <em> your </em>Zodiac sign is?
+      <br />
+      Just <span> click the button below </span>and we'll tell you!
+    </h2>
+    <button class="questionButton">What is my Zodiac sign?</button>
+    <br />
+    <ul>
+      <div class="topRowButtons">
+        <li>
+          <button class="Zodiac Capricorn Earth">
+            <div class="zodiacName">Capricorn</div>
+            <div class="Element">Earth</div>
+            <div class="Traits">
+              responsible<br />hard-working<br />perfectionist
+            </div>
+          </button>
+        </li>
+        <li>
+          <button class="Zodiac Aquarius Air">
+            <div class="zodiacName">Aquarius</div>
+            <div class="Element">Air</div>
+            <div class="Traits">progressive<br />original<br />idealistic</div>
+          </button>
+        </li>
+        <li>
+          <button class="Zodiac Pisces Water">
+            <div class="zodiacName">Pisces</div>
+
+            <div class="Element">Water</div>
+            <div class="Traits">creative<br />optimistic<br />trusting</div>
+          </button>
+        </li>
+        <li>
+          <button class="Zodiac Aries Fire">
+            <div class="zodiacName">Aries</div>
+            <div class="Element">Fire</div>
+            <div class="Traits">dynamic<br />courageous<br />competitive</div>
+          </button>
+        </li>
+        <li>
+          <button class="Zodiac Taurus Earth">
+            <div class="zodiacName">Taurus</div>
+            <div class="Element">Earth</div>
+            <div class="Traits">reliable<br />honest<br />stubborn</div>
+          </button>
+        </li>
+        <li>
+          <button class="Zodiac Gemini Air">
+            <div class="zodiacName">Gemini</div>
+            <div class="Element">Air</div>
+            <div class="Traits">outgoing<br />flexible<br />impulsive</div>
+          </button>
+        </li>
+      </div>
+      <br />
+      <div class="bottomRowButtons">
+        <li>
+          <button class="Zodiac Cancer Water">
+            <div class="zodiacName">Cancer</div>
+            <div class="Element">Water</div>
+            <div class="Traits">loyal<br />intuitive<br />sensitive</div>
+          </button>
+        </li>
+        <li>
+          <button class="Zodiac Leo Fire">
+            <div class="zodiacName">Leo</div>
+            <div class="Element">Fire</div>
+            <div class="Traits">generous<br />confident<br />willful</div>
+          </button>
+        </li>
+        <li>
+          <button class="Zodiac Virgo Earth">
+            <div class="zodiacName">Virgo</div>
+            <div class="Element">Earth</div>
+            <div class="Traits">sensible<br />kind<br />meticulous</div>
+          </button>
+        </li>
+        <li>
+          <button class="Zodiac Libra Air">
+            <div class="zodiacName">Libra</div>
+            <div class="Element">Air</div>
+            <div class="Traits">social<br />fair<br />indecisive</div>
+          </button>
+        </li>
+        <li>
+          <button class="Zodiac Scorpio Water">
+            <div class="zodiacName">Scorpio</div>
+            <div class="Element">Water</div>
+            <div class="Traits">determined<br />committed<br />emotional</div>
+          </button>
+        </li>
+        <li>
+          <button class="Zodiac Sagittarius Fire">
+            <div class="zodiacName">Sagittarius</div>
+            <div class="Element">Fire</div>
+            <div class="Traits">
+              compassionate<br />curious<br />independent
+            </div>
+          </button>
+        </li>
+      </div>
+    </ul>
+
+    <a
+      href="https://blog.prepscholar.com/zodiac-symbols-signs"
+      target="_blank"
+      class="furtherInfo"
+      >Want to know more about your Zodiac sign? Click here!</a
+    >
+
+    <div class="credits">
+      Coded by <strong> MWNakahara </strong>
+      <span class="datePlace"> 2021-05-23 Vancouver*BC</span>
+    </div>
+
+    <script>
+      function determineZodiacSign() {
+        let month = prompt("Which month were you born in? (e.g. January)");
+        let day = prompt("What day were you born on? (e.g. 28)");
+        month = month.toLowerCase();
+        month = month.trim();
+
+        let zodiacSignResult = document.querySelector("button");
+        let capricorn = "You are a Capricorn! ♑";
+        let aquarius = "You are an Aquarius! ♒";
+        let pisces = "You are a Pisces! ♓";
+        let aries = "You are an Aries! ♈";
+        let taurus = "You are a Taurus! ♉";
+        let gemini = "You are a Gemini! ♊";
+        let cancer = "You are a Cancer! ♋";
+        let leo = "You are a Leo! ♌";
+        let virgo = "You are a Virgo! ♍";
+        let libra = "You are a Libra! ♎";
+        let scorpio = "You are a Scorpio! ♏";
+        let sagittarius = "You are a Sagittarius! ♐";
+        let checkItOut = "Check out your Zodiac sign below!";
+
+        if (
+          month === "january" ||
+          month === "february" ||
+          month === "march" ||
+          month === "april" ||
+          month === "may" ||
+          month === "june" ||
+          month === "july" ||
+          month === "august" ||
+          month === "september" ||
+          month === "october" ||
+          month === "november" ||
+          month === "december"
+        ) {
+          if (month === "december" && day >= 22) {
+            zodiacSignResult.innerHTML = capricorn + "<br />" + checkItOut;
+          }
+          if (month === "january" && day <= 19) {
+            zodiacSignResult.innerHTML = capricorn + "<br />" + checkItOut;
+          }
+          if (month === "january" && day >= 20) {
+            zodiacSignResult.innerHTML = aquarius + "<br />" + checkItOut;
+          }
+          if (month === "february" && day <= 18) {
+            zodiacSignResult.innerHTML = aquarius + "<br />" + checkItOut;
+          }
+          if (month === "february" && day >= 19) {
+            zodiacSignResult.innerHTML = pisces + "<br />" + checkItOut;
+          }
+          if (month === "march" && day <= 20) {
+            zodiacSignResult.innerHTML = pisces + "<br />" + checkItOut;
+          }
+          if (month === "march" && day >= 21) {
+            zodiacSignResult.innerHTML = aries + "<br />" + checkItOut;
+          }
+          if (month === "april" && day <= 19) {
+            zodiacSignResult.innerHTML = aries + "<br />" + checkItOut;
+          }
+          if (month === "april" && day >= 20) {
+            zodiacSignResult.innerHTML = taurus + "<br />" + checkItOut;
+          }
+          if (month === "may" && day <= 20) {
+            zodiacSignResult.innerHTML = taurus + "<br />" + checkItOut;
+          }
+          if (month === "may" && day >= 21) {
+            zodiacSignResult.innerHTML = gemini + "<br />" + checkItOut;
+          }
+          if (month === "june" && day <= 20) {
+            zodiacSignResult.innerHTML = gemini + "<br />" + checkItOut;
+          }
+          if (month === "june" && day >= 21) {
+            zodiacSignResult.innerHTML = cancer + "<br />" + checkItOut;
+          }
+          if (month === "july" && day <= 22) {
+            zodiacSignResult.innerHTML = cancer + "<br />" + checkItOut;
+          }
+          if (month === "july" && day >= 23) {
+            zodiacSignResult.innerHTML = leo + "<br />" + checkItOut;
+          }
+          if (month === "august" && day <= 22) {
+            zodiacSignResult.innerHTML = leo + "<br />" + checkItOut;
+          }
+          if (month === "august" && day >= 23) {
+            zodiacSignResult.innerHTML = virgo + "<br />" + checkItOut;
+          }
+          if (month === "september" && day <= 22) {
+            zodiacSignResult.innerHTML = virgo + "<br />" + checkItOut;
+          }
+          if (month === "september" && day >= 23) {
+            zodiacSignResult.innerHTML = libra + "<br />" + checkItOut;
+          }
+          if (month === "october" && day <= 22) {
+            zodiacSignResult.innerHTML = libra + "<br />" + checkItOut;
+          }
+          if (month === "october" && day >= 23) {
+            zodiacSignResult.innerHTML = scorpio + "<br />" + checkItOut;
+          }
+          if (month === "november" && day <= 21) {
+            zodiacSignResult.innerHTML = scorpio + "<br />" + checkItOut;
+          }
+          if (month === "november" && day >= 22) {
+            zodiacSignResult.innerHTML = sagittarius + "<br />" + checkItOut;
+          }
+          if (month === "december" && day <= 21) {
+            zodiacSignResult.innerHTML = sagittarius + "<br />" + checkItOut;
+          }
+        } else {
+          alert(
+            "Oh no! We couldn't decipher your information! " +
+              "But it's okay, let's just try again! " +
+              "Please make sure to spell out your birth month completely. (e.g. December, not Dec or 12)"
+          );
+        }
+      }
+
+      let questionButton = document.querySelector(".questionButton");
+      questionButton.addEventListener("click", determineZodiacSign);
+    </script>
+  </body>
+</html>
